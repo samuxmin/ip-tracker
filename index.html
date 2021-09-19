@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/helper/settings.css">
+<link rel="stylesheet" href="./styles/styles.css">
+<title>Frontend Mentor | IP Address Tracker</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+crossorigin=""></script>
+</head>
+<body>
+  <div class="container">
+    <div class="top-side">
+      <h1 class="title">IP Address Tracker</h1>
+      <div class="form">
+        <input class="ip-input" id="ip" placeholder="Search for any IP address or domain" type="text"/>
+        <button class="search-button" id="searchBtn"><img src="./images/icon-arrow.svg"> </button>
+      </div>
+      <div class="info-cards">
+        <div class="info">
+          <p class="info-title">IP ADDRESS</p>
+          <span class="info-text" id="ip-address"></span>
+        </div>
+        <div class="info">
+          <p class="info-title">LOCATION</p>
+          <span class="info-text" id="location"></span>
+        </div>
+        <div class="info">
+          <p class="info-title">TIMEZONE</p>
+          <span class="info-text" id="time-zone"></span>
+        </div>
+        <div class="info">
+          <p class="info-title">ISP</p>
+          <span class="info-text" id="isp"></span>
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>    
+  </div>
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="https://samuxmin.github.io" target="_blank">Samuel Mindler</a>.
+  <script src="./js/map.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

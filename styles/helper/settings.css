@@ -1,0 +1,22 @@
+* {
+  font-family: 'Rubik', sans-serif;
+}
+
+.attribution {
+  color: white;
+  font-size: 11px;
+  text-align: center;
+  margin: 70px auto;
+}
+
+.attribution a {
+  color: yellow;
+}
+
+#map {
+  min-height: 400px;
+  height: 100%;
+  z-index: 50;
+  width: 100%;
+}
+/*# sourceMappingURL=settings.css.map */
