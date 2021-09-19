@@ -4,6 +4,9 @@
 
 html, body{
     background: url('./../images/pattern-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body, .container{
@@ -47,15 +50,14 @@ body, .container{
     border-radius: 15px ;
 }
 .ip-input{
-    min-width: 250px;
-    width: 100%;
+    min-width: 200px;
+    width: 35vw;
     font-size: 18px;
     border: none;
     outline: none;
     background: transparent;
     height: 50px;
     margin: 0;
-    margin-right: 50px;
     padding-left: 15px;
     &::placeholder{
         color: $dark-gray;
@@ -85,13 +87,13 @@ body, .container{
     margin: 0px auto 0px auto;
     border-radius: 15px;
     width: fit-content;
+    min-height: 60px;
     transform: translateY(50%);
     z-index: 100;
 
 }
 .info{
     width: 250px;
-    min-height: 100px;
     z-index: 120;
     &:first-child{
         border-left:none ;
@@ -136,6 +138,7 @@ body, .container{
 }
 @media(min-width: 1010px){
     .info-cards{
+        min-height: 100px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }

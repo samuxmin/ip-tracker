@@ -22,6 +22,9 @@
 
 html, body {
   background: url("./../images/pattern-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body, .container {
@@ -87,15 +90,14 @@ body, .container {
 }
 
 .ip-input {
-  min-width: 250px;
-  width: 100%;
+  min-width: 200px;
+  width: 35vw;
   font-size: 18px;
   border: none;
   outline: none;
   background: transparent;
   height: 50px;
   margin: 0;
-  margin-right: 50px;
   padding-left: 15px;
 }
 
@@ -147,6 +149,7 @@ body, .container {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  min-height: 60px;
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
   z-index: 100;
@@ -154,7 +157,6 @@ body, .container {
 
 .info {
   width: 250px;
-  min-height: 100px;
   z-index: 120;
 }
 
@@ -209,6 +211,7 @@ body, .container {
 
 @media (min-width: 1010px) {
   .info-cards {
+    min-height: 100px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
